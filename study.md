@@ -16,4 +16,27 @@ date:2023-10
     - android-sdkがlatestだと下位バージョン未対応のため、10.0に落とした
     - avd managerではTiramisu API Level 33のGoogleAPIを選択すること(他もあるが起動しない)
 
+## emulator
+
+- toggledark mode
+  - command + shiht + a
+
+## styles
+
+- Layout Props: 全て
+- View Style Props: 全て
+- Shadow Props: 全て
+- Text Style Props: Textのみ
+- Image Style Props: Image、ImageBackgroundのみ
+
+## react-native
+
+### SafeAreaView StatusBar
+
+スマホの上部の時刻、充電情報部分をカットする形でmarginをとってくれる。
+背景色などの設定はStatusBar Componentにて行う。
+
+#todo backgroundcolorを設定しても変更されない。なぜ。。
+
+
 ## その他
