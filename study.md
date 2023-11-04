@@ -29,14 +29,30 @@ date:2023-10
 - Text Style Props: Textのみ
 - Image Style Props: Image、ImageBackgroundのみ
 
+### styles 例
+
+ネスト構造が使用できないので、変数名にどのコンポーネントに引き当てているかわかるような命名にする。
+
+```tsx
+
+const textStyles = StyleSheet.create({
+  common: {
+    fontSize: 20,
+  },
+  bold: {
+    color: 'red',
+    fontWeight: 'bold',
+  },
+});
+
+```
+
 ## react-native
 
 ### SafeAreaView StatusBar
 
 スマホの上部の時刻、充電情報部分をカットする形でmarginをとってくれる。
 背景色などの設定はStatusBar Componentにて行う。
-
-#todo backgroundcolorを設定しても変更されない。なぜ。。
 
 
 ## その他
