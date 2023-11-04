@@ -20,6 +20,8 @@ date:2023-10
 
 - toggledark mode
   - command + shiht + a
+- cache削除
+  - ``./node_modules/react-native/scripts/packager.sh --reset-cache1`
 
 ## styles
 
@@ -44,7 +46,6 @@ const textStyles = StyleSheet.create({
     fontWeight: 'bold',
   },
 });
-
 ```
 
 ## react-native

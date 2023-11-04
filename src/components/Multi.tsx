@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, ViewStyle, Text, View} from 'react-native';
+import {StyleSheet, ViewStyle, Text, View, Image} from 'react-native';
 
 interface Props {
   children?: React.ReactNode;
@@ -21,6 +21,14 @@ function Multi({
       </View>
       <Text style={textStyles.common}>Text</Text>
       <Text style={[textStyles.common, textStyles.bold]}>Text</Text>
+      <Image
+        source={{uri: 'kafka_icon'}}
+        style={imageStyles.icon}
+        // resizeMode 検証
+        resizeMode="contain"
+        // resizeMode="cover"
+        // resizeMode="stretch"
+      />
     </>
   );
 }
@@ -33,6 +41,10 @@ const textStyles = StyleSheet.create({
     color: 'red',
     fontWeight: 'bold',
   },
+});
+
+const imageStyles = StyleSheet.create({
+  icon: {width: 400, height: 200},
 });
 
 export default Multi;
