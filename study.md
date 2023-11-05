@@ -55,5 +55,31 @@ const textStyles = StyleSheet.create({
 スマホの上部の時刻、充電情報部分をカットする形でmarginをとってくれる。
 背景色などの設定はStatusBar Componentにて行う。
 
+### 標準ユーティリティー
+
+- Alert
+- AppState
+  - active: 前面にある
+  - inactive: 起動アプリ一覧画面、遷移中(iosのみ)
+  - background: ホーム画面、他のアプリが表示中
+- BackHandler
+  - androidのナビゲーション
+- ClipBoard
+- Dimensions
+  - デバイスサイズの取得、向き変更時
+- Linking
+  - URL開くとき
+- PermissionsAndroid
+  - 機能の許可をモーダルで表示する
+- Share
+- Vibration
+
+### コミュニティコンポーネント
+
+- async-storage
+- SafeAreaView
+  - 既にreact-nativeから提供済み
+- ProgressView/ProgressBarAndroid
+
 
 ## その他

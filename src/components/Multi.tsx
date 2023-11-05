@@ -1,5 +1,15 @@
 import React from 'react';
-import {StyleSheet, ViewStyle, Text, View, Image} from 'react-native';
+import {
+  StyleSheet,
+  ViewStyle,
+  Text,
+  View,
+  Image,
+  ActivityIndicator,
+  Switch,
+  PermissionsAndroid,
+  Alert,
+} from 'react-native';
 
 interface Props {
   children?: React.ReactNode;
@@ -12,6 +22,38 @@ function Multi({
   style = {backgroundColor: 'green'},
   onPress = () => console.log('hello.'),
 }: Props): JSX.Element {
+  const [value, setValue] = React.useState(false);
+  const onValueChange = (newValue: boolean) => setValue(newValue);
+
+  const requestCameraPermission = async () => {
+    try {
+      const isGranted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.CAMERA,
+        {
+          title: 'Cool Photo App Camera Permission',
+          message:
+            'Cool Photo App needs access to your camera ' +
+            'so you can take awesome pictures.',
+          buttonNeutral: 'Ask Me Later',
+          buttonNegative: 'Cancel',
+          buttonPositive: 'OK',
+        },
+      );
+      console.log(isGranted);
+      if (isGranted === PermissionsAndroid.RESULTS.GRANTED) {
+        Alert.alert('許可ありがとうございます');
+      } else {
+        Alert.alert('カメラを使うと便利');
+      }
+    } catch (err) {
+      console.warn(err);
+    }
+  };
+
+  React.useEffect(() => {
+    requestCameraPermission();
+  }, [value]);
+
   return (
     <>
       <View>
@@ -29,9 +71,22 @@ function Multi({
         // resizeMode="cover"
         // resizeMode="stretch"
       />
+      <Switch value={value} onValueChange={onValueChange} />
+      <View style={indicatorStyles.container}>
+        {value && <ActivityIndicator size="large" color="white" />}
+      </View>
     </>
   );
 }
+
+const indicatorStyles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'black',
+  },
+});
 
 const textStyles = StyleSheet.create({
   common: {
