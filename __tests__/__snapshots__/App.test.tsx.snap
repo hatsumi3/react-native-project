@@ -1,0 +1,289 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  style={
+    {
+      "backgroundColor": "#F3F3F3",
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          {
+            "backgroundColor": "pink",
+            "flex": 2,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "fontSize": 20,
+              "margin": 10,
+              "textAlign": "center",
+            }
+          }
+        >
+          My First component.
+        </Text>
+        <Text>
+          42
+        </Text>
+        <Text>
+          foo
+        </Text>
+        <Text>
+          true
+        </Text>
+        <View>
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "backgroundColor": "green",
+              }
+            }
+          >
+            default text
+          </Text>
+        </View>
+        <Text
+          style={
+            {
+              "fontSize": 20,
+            }
+          }
+        >
+          Text
+        </Text>
+        <Text
+          style={
+            [
+              {
+                "fontSize": 20,
+              },
+              {
+                "color": "red",
+                "fontWeight": "bold",
+              },
+            ]
+          }
+        >
+          Text
+        </Text>
+        <Image
+          resizeMode="contain"
+          source={
+            {
+              "uri": "kafka_icon",
+            }
+          }
+          style={
+            {
+              "height": 200,
+              "width": 400,
+            }
+          }
+        />
+        <RCTSwitch
+          accessibilityRole="switch"
+          onChange={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "height": 31,
+              "width": 51,
+            }
+          }
+          value={false}
+        />
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "black",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        />
+        <View
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "color": "black",
+              "flex": 1,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Text
+            onPress={[Function]}
+            style={
+              {
+                "backgroundColor": "white",
+                "color": "black",
+              }
+            }
+          >
+            切り替え
+          </Text>
+          <Text
+            style={
+              {
+                "backgroundColor": "white",
+                "color": "black",
+              }
+            }
+          >
+            journal
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "blue",
+            "flex": 1,
+          }
+        }
+      >
+        <Text>
+          box2
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "pink",
+            "height": 400,
+          }
+        }
+      >
+        <RCTScrollView
+          data={
+            [
+              {
+                "id": "first",
+                "title": "ひとつめ",
+              },
+              {
+                "id": "second",
+                "title": "ふたつめ",
+              },
+              {
+                "id": "thrid",
+                "title": "みっつめ",
+              },
+            ]
+          }
+          getItem={[Function]}
+          getItemCount={[Function]}
+          keyExtractor={[Function]}
+          onContentSizeChange={[Function]}
+          onLayout={[Function]}
+          onMomentumScrollBegin={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          removeClippedSubviews={false}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          stickyHeaderIndices={[]}
+          viewabilityConfigCallbackPairs={[]}
+        >
+          <View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <Text
+                style={
+                  {
+                    "fontSize": 20,
+                    "margin": 10,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                ひとつめ
+              </Text>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <Text
+                style={
+                  {
+                    "fontSize": 20,
+                    "margin": 10,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                ふたつめ
+              </Text>
+            </View>
+            <View
+              onFocusCapture={[Function]}
+              onLayout={[Function]}
+              style={null}
+            >
+              <Text
+                style={
+                  {
+                    "fontSize": 20,
+                    "margin": 10,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                みっつめ
+              </Text>
+            </View>
+          </View>
+        </RCTScrollView>
+      </View>
+      <View
+        style={
+          {
+            "backgroundColor": "blue",
+            "height": 400,
+          }
+        }
+      >
+        <Text>
+          box4
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</RCTSafeAreaView>
+`;
