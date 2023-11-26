@@ -74,6 +74,15 @@ const textStyles = StyleSheet.create({
 - Share
 - Vibration
 
+### react-navigation
+
+- インストール手順 v6.0
+  - `npm install @react-navigation/native`
+  - `npm install react-native-screens react-native-safe-area-context`
+- jest 設定
+  - Testing Libaryの[doc.](https://callstack.github.io/react-native-testing-library/docs/react-navigation)参照
+- [公式URL](https://reactnavigation.org/docs/getting-started)
+
 ### コミュニティコンポーネント
 
 - async-storage
