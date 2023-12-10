@@ -13,6 +13,8 @@ import {it, expect} from '@jest/globals';
 // Note: test renderer must be required after react-native.
 import renderer, {ReactTestRenderer} from 'react-test-renderer';
 
+jest.useFakeTimers();
+
 it('renders correctly', async () => {
   let tree: ReactTestRenderer | undefined;
 
